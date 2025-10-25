@@ -1,4 +1,7 @@
 ### DefenderOptimise.ps1 ###
+# Author: Gabriel Gonzalez
+# License: MIT
+# Use at your own risk. Creates restore points automatically.
 
 
 # === DEFENDER OPTIMISE ===
@@ -26,3 +29,4 @@ Set-MpPreference -ScanAvgCPULoadFactor 30  # aim to keep full scan avg CPU ~30%
 Set-MpPreference -DisableArchiveScanning $false  # leave archive scanning ON
 
 Write-Host "`n>> Defender optimisation applied. Reboot recommended."
+
