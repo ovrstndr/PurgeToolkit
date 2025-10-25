@@ -1,4 +1,7 @@
-# === POST-PURGE POLISH (PowerShell-native) ===
+# === POST-PURGE POLISH (PowerShell-native) ===# Author: Gabriel Gonzalez
+# License: MIT
+# Use at your own risk. Creates restore points automatically.
+
 # Run as Administrator. Safe cleanup + QoL polish + gold restore point.
 
 # ----- Setup: logging -----
@@ -82,3 +85,4 @@ Checkpoint-Computer -Description "PostPurgePolish_GOLD_$stamp" -RestorePointType
 
 Write-Log "Post-Purge Polish complete. Reboot recommended."
 Write-Host "`n>> Post-Purge Polish complete. Reboot recommended. Log: $log"
+
