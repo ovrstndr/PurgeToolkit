@@ -1,4 +1,8 @@
 # === OPERATION CLEAN SWEEP (XBOX-SAFE) ===
+# Author: Gabriel Gonzalez
+# License: MIT
+# Use at your own risk. Creates restore points automatically.
+
 # Run as Administrator. Creates restore point first.
 
 Write-Host ">> Creating system restore point..."
@@ -59,3 +63,4 @@ reg add "HKCU\Software\Microsoft\OneDrive" /v "DisablePersonalSync" /t REG_DWORD
 Dism.exe /Online /Cleanup-Image /StartComponentCleanup
 
 Write-Host "`n>> Clean Sweep complete. Reboot recommended."
+
