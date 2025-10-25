@@ -1,4 +1,8 @@
 # === AFTERBURNER: Post-Purge Performance Tuning (Xbox-Safe) ===
+# Author: Gabriel Gonzalez
+# License: MIT
+# Use at your own risk. Creates restore points automatically.
+
 # Run as Administrator.
 
 # --- Safety: Restore Point ---
@@ -54,3 +58,4 @@ powercfg -setdcvalueindex $SCHEME SUB_PROCESSOR be337238-0d82-4146-a960-4f3749d4
 powercfg -SetActive $SCHEME
 
 Write-Host "`n>> Afterburner tuning applied. Reboot now to finalize (HAGS requires restart)."
+
